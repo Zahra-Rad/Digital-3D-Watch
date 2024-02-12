@@ -6,6 +6,11 @@
 
 body {
   background-color: #191919;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family: "JetBrains Mono", monospace;
 }
 body:hover .seconds > .right {
@@ -19,6 +24,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 170px;
   color: white;
   font-size: 72px;
   transform-style: preserve-3d;
@@ -83,9 +89,10 @@ main > div > div > div::after {
   position: absolute;
   top: 0;
   left: 0;
+  backface-visibility: hidden;
 }
 main > div > div > div::before {
-  color: #434343;
+  color: #404040;
   transform-origin: top;
   position: absolute;
   top: 0;
